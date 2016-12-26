@@ -8,3 +8,12 @@ gen bondrate = 0.0438
 replace bondrate = 0.046 if Year == 2013
 replace bondrate = 0.025 if Year == 2014
 replace bondrate = 0.01 if Year == 2015
+replace Shortloan = 0 if Shortloan == .
+replace Longloan = 0 if Longloan == .
+replace Bond = 0 if Bond == .
+replace saleexpense = 0 if saleexpense == .
+replace interest = 0 if interest == .
+replace EBIT = 0 if EBIT == .
+replace subsidy = 0 if subsidy == .
+replace taxreturn = 0 if taxreturn ==.
+replace RD = 0 if RD == .
