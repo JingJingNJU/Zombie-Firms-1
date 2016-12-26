@@ -1,0 +1,7 @@
+gen rd = 0
+replace rd = 1 if RD > 0
+gen NNOV = RD / revenue
+gen SIZE = revenue / 1000000
+gen SIZE2 = SIZE ^2
+gen MPOW = saleexpense / revenue
+gen MPOW2 = MPOW ^2
