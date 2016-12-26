@@ -1,0 +1,10 @@
+gen stateowned = strmatch( property , "*国有企业")
+gen shortrate = 0.056
+replace shortrate = 0.0435 if Year == 2015
+gen longrate = 0.0615
+replace longrate = 0.06 if Year == 2014
+replace longrate = 0.0475 if Year == 2015
+gen bondrate = 0.0438
+replace bondrate = 0.046 if Year == 2013
+replace bondrate = 0.025 if Year == 2014
+replace bondrate = 0.01 if Year == 2015
