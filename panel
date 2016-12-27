@@ -1,1 +1,2 @@
-
+encode id, gen(firm)
+xtset firm Year
