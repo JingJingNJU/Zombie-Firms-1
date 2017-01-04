@@ -2,6 +2,6 @@ gen r = Shortloan* shortrate* 0.9+ Longloan* longrate*0.9+ Bond* bondrate
 gen zombie = 0
 replace zombie = 1 if EBIT < r
 
-gen r2 = Shortloan* shortrate* 0.9+ Longloan* longrate*0.9
-gen zombie2 = 0
-replace zombie2 = 1 if EBIT < r
+gen r = Shortloan* shortrate* 0.9+ Longloan* longrate*0.9
+gen zombie = 0
+replace zombie = 1 if EBIT < r
