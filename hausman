@@ -1,0 +1,5 @@
+xtlogit rd zombie SIZE SIZE2 MPOW MPOW2 i.Year, fe nolog
+estimates store FE
+xtlogit rd zombie SIZE SIZE2 MPOW MPOW2 i.Year, re nolog
+estimates store RE
+hausman FE RE
