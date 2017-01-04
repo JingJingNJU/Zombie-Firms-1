@@ -1,3 +1,3 @@
-xtlogit rd zombie1 SIZE SIZE2 MPOW MPOW2 i.Year, fe
-xtlogit rd zombie2 SIZE SIZE2 MPOW MPOW2 i.Year, fe
-xtlogit rd zombie3 SIZE SIZE2 MPOW MPOW2 i.Year, fe
+xtlogit rd zombie1 SIZE SIZE2 MPOW MPOW2 i.Year, fe nolog
+xtlogit rd zombie2 SIZE SIZE2 MPOW MPOW2 i.Year, fe nolog
+xtlogit rd zombie3 SIZE SIZE2 MPOW MPOW2 i.Year, fe nolog
