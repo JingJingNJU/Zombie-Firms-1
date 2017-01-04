@@ -1,3 +1,4 @@
-xtlogit rd zombie1 SIZE SIZE2 MPOW MPOW2 i.Year, fe nolog
-xtlogit rd zombie2 SIZE SIZE2 MPOW MPOW2 i.Year, fe nolog
-xtlogit rd zombie3 SIZE SIZE2 MPOW MPOW2 i.Year, fe nolog
+xtlogit rd zombie SIZE SIZE2 MPOW MPOW2 i.Year, re nolog
+xtreg NNOV zombie SIZE SIZE2 MPOW MPOW2 i.Year, re
+xtlogit rd zombie SIZE SIZE2 MPOW MPOW2 i.Year stateowned i.ind i.pro, re nolog
+xtreg NNOV zombie SIZE SIZE2 MPOW MPOW2 i.Year stateowned i.ind i.pro, re
