@@ -5,3 +5,5 @@ gen SIZE = revenue / 1000000
 gen SIZE2 = SIZE ^2
 gen MPOW = saleexpense / revenue
 gen MPOW2 = MPOW ^2
+encode Industry, gen(ind)
+encode Province, gen(pro)
