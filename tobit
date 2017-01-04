@@ -1,3 +1,2 @@
-xttobit NNOV zombie1 SIZE SIZE2 MPOW MPOW2 stateowned,ll(0) nolog tobit
-xttobit NNOV zombie2 SIZE SIZE2 MPOW MPOW2 stateowned,ll(0) nolog tobit
-xttobit NNOV zombie3 SIZE SIZE2 MPOW MPOW2 stateowned,ll(0) nolog tobit
+xttobit NNOV zombie1 SIZE SIZE2 MPOW MPOW2 i.Year,ll(0) nolog tobit
+xttobit NNOV zombie1 SIZE SIZE2 MPOW MPOW2 i.Year stateowned i.ind i.pro,ll(0) nolog tobit
