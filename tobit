@@ -1,2 +1,7 @@
-xttobit NNOV zombie SIZE SIZE2 MPOW MPOW2 i.Year,ll(0) nolog tobit
-xttobit NNOV zombie SIZE SIZE2 MPOW MPOW2 i.Year stateowned i.ind i.pro,ll(0) nolog tobit
+eststo Tobit1: quietly xttobit NNOV zombie SIZE SIZE2 MPOW MPOW2 i.Year,ll(0) nolog tobit
+eststo Tobit2: quietly xttobit NNOV zombie SIZE SIZE2 MPOW MPOW2 stateowned i.Year i.ind i.pro,ll(0) nolog tobit
+eststo Logit1: quietly xtlogit rd zombie SIZE SIZE2 MPOW MPOW2 i.Year, re nolog
+eststo Reg1: quietly xtreg NNOV zombie SIZE SIZE2 MPOW MPOW2 i.Year, re
+eststo Logit2: quietly xtlogit rd zombie SIZE SIZE2 MPOW MPOW2 stateowned i.Year i.ind i.pro, re nolog
+eststo Reg2: quietly xtreg NNOV zombie SIZE SIZE2 MPOW MPOW2 stateowned i.Year i.ind i.pro, re
+esttab using D:\zombie.wtf
